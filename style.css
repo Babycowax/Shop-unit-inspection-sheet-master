@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  20px;
+    background: rgb(240, 231, 236);
+}
+
+.flex-row {
+    display: flex;
+}
+.container {
+    margin: 0%;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.outline {
+    border-style:ridge;
+    border-color: rgb(185, 188, 206);
+    padding: 15px;
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+} 
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box,) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline:none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+/*this makes the input boxes go side by side instead of below one another*/
+
+input {
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+div.options > label > input {
+	visibility: hidden;
+}
+
+div.options > label {
+	display:contents;
+	margin: 0 0 0 -10px;
+	padding: 0 0 20px 0;  
+	height: 20px;
+	width: 150px;
+    font-size: 130%;
+}
+
+div.options > label > img {
+	display: inline-block;
+	padding: 0px;
+	height:23px;
+	width:23px;
+	background: none;
+}
+
+div.options > label > input:checked +img {  
+	background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:23px 23px;
+}
+
+
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #none;
+    font-size: 16px;
+    resize: none;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    outline: none;
+  }
+
+  textarea:focus {
+    outline: none !important;
+    border-color: #e2d847;
+    box-shadow: 0 0 10px #e4c749;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #e2d847;
+    box-shadow: 0 0 10px #e4c749;
+}
+
+.select-box select:focus{
+    outline: none !important;
+    border-color: #e2d847;
+    box-shadow: 0 0 10px #e4c749;
+}
+
+canvas#signature-pad {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+}
+
+.jSignature {
+    background-color: rgb(151, 23, 23);
+}
+
+button#clear {
+    height: 100%;
+    border: 20px;
+    background: #0e5272;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button#clear span {
+    transform: rotate(90deg);
+    display: block;
+}
+
+.signature-pad {
+    border: 1px solid #000;
+    margin: 6.2px;
+    margin-bottom: 20px;
+    margin-top: px;
+    border: 2px solid #cfd1d6;
+    border-radius: 1px;
+    padding: 0 15px;
+}
+
+.signature-pad {
+    border: 1px solid #000;
+    margin: 6.2px;
+    margin-bottom: 20px;
+    margin-top: px;
+    border: 2px solid #cfd1d6;
+    border-radius: 1px;
+    padding: 0 15px;
+}
+
+button {
+    border: none;
+    margin-left: 6.2px;
+    padding: 10px 20px;
+    background: linear-gradient(130deg,
+            #3c4444,
+            #43696e);
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.submit-button {
+    height: 55px;
+    width: 98%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background: #828c92;
+  }
+
+.form button:hover{
+  background: rgb(110, 180, 115);
+}
+  
+
+@media screen and (max-width: 800px) {
+    .form .column {
+        flex-wrap: wrap;
+    }   
+}
+
+
+/*THIS HELPS WRAP CONTENT INSIDE OF IOS SCREEN - HAD ISSUE WITH COLUMNS STICKING OUT OF SCREEN SO ADDED THIS)
