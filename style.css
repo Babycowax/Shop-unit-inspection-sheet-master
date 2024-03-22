@@ -143,6 +143,7 @@ textarea {
     border-radius: 6px;
     border: 2px solid #ddd;
     outline: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3)
   }
 
   textarea:focus {
@@ -197,6 +198,7 @@ button#clear span {
     border: 2px solid #cfd1d6;
     border-radius: 1px;
     padding: 0 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3)
 }
 
 .signature-pad {
@@ -207,6 +209,7 @@ button#clear span {
     border: 2px solid #cfd1d6;
     border-radius: 1px;
     padding: 0 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3)
 }
 
 button {
